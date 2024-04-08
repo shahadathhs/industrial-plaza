@@ -10,6 +10,7 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Home from './pages/Home/Home';
 import FAQs from './pages/FAQs/FAQs';
 import Testimonials from './pages/Testimonials/Testimonials';
+import EstateDetails from './components/EstateDetails/EstateDetails';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
         path: '/testimonials',
         element: <Testimonials></Testimonials>,
       },
+      {
+        path: '/estate/:id',
+        element: <EstateDetails></EstateDetails>,
+        loader: () => fetch('/Estate.json'),
+      }
     ]
   },
 ]);

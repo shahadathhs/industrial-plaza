@@ -9,7 +9,9 @@
     "status": "sale",
     "area": "50,000 sqft",
     "location_name": "London Bridge",
-    "location_coordinate": [51.5074, -0.0899]
+    "location_coordinate": [51.5074, -0.0899],
+    "facilities": ["Loading docks", "Parking space", "High ceilings"],
+    "rating": 5
   },
   {
     "id": 2,
@@ -21,7 +23,9 @@
     "status": "rent",
     "area": "20,000 sqft",
     "location_name": "Canary Wharf",
-    "location_coordinate": [51.5048, -0.0195]
+    "location_coordinate": [51.5048, -0.0195],
+    "facilities": ["Machinery", "Production lines", "Assembly areas"],
+    "rating": 4.5
   },
   {
     "id": 3,
@@ -33,7 +37,9 @@
     "status": "sale",
     "area": "10,000 sqft",
     "location_name": "Greenwich",
-    "location_coordinate": [51.4826, -0.0077]
+    "location_coordinate": [51.4826, -0.0077],
+    "facilities": ["Temperature-controlled rooms", "Refrigeration units", "Loading bays"],
+    "rating": 5
   },
   {
     "id": 4,
@@ -45,7 +51,9 @@
     "status": "sale",
     "area": "100 acres",
     "location_name": "Stratford",
-    "location_coordinate": [51.5433, -0.0027]
+    "location_coordinate": [51.5433, -0.0027],
+    "facilities": ["Turbines", "Generators", "Control rooms"],
+    "rating": 4.8
   },
   {
     "id": 5,
@@ -57,7 +65,9 @@
     "status": "rent",
     "area": "200 acres",
     "location_name": "Whitechapel",
-    "location_coordinate": [51.5194, -0.0598]
+    "location_coordinate": [51.5194, -0.0598],
+    "facilities": ["Office spaces", "Security", "Transportation access"],
+    "rating": 4.8
   },
   {
     "id": 6,
@@ -69,7 +79,9 @@
     "status": "sale",
     "area": "30,000 sqft",
     "location_name": "Wembley",
-    "location_coordinate": [51.556, -0.279]
+    "location_coordinate": [51.556, -0.279],
+    "facilities": ["Automated systems", "Research labs", "Quality control rooms"],
+    "rating": 4.7
   },
   {
     "id": 7,
@@ -81,6 +93,8 @@
     "status": "rent",
     "area": "60,000 sqft",
     "location_name": "Croydon",
-    "location_coordinate": [51.3762, -0.0982]
+    "location_coordinate": [51.3762, -0.0982],
+    "facilities": ["Loading bays", "Storage racks", "Inventory management systems"],
+    "rating": 4.5
   }
 ]
