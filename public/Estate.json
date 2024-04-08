@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Warehouse Complex",
+    "image": "https://i.ibb.co/MfYBgL0/26b4e92e-f575-4dbb-8f33-93fa0e1cd8ee.jpg",
+    "segment_name": "Industrial",
+    "description": "This spacious warehouse complex is perfect for storage and distribution purposes. It offers ample space for storing goods of various sizes and types. Equipped with loading docks, office spaces, and parking areas, this complex provides everything you need for efficient operations. The facilities include loading docks for easy transportation of goods, well-equipped office spaces for administrative tasks, and ample parking area for staff and visitors.",
+    "price": "$1,200,000",
+    "status": "sale",
+    "area": "50,000 sqft",
+    "location_name": "London Bridge",
+    "location_coordinate": [51.5074, -0.0899]
+  },
+  {
+    "id": 2,
+    "estate_title": "Factory Building",
+    "image": "https://i.ibb.co/VxxVJzj/bf99b202-7a4d-4020-8b3f-702698bdd8e0.jpg",
+    "segment_name": "Industrial",
+    "description": "This modern factory building is designed specifically for manufacturing operations. It features state-of-the-art machinery and assembly lines to streamline production processes. With spacious warehouse space and heavy machinery, this factory is equipped to handle high-volume manufacturing. The facilities include heavy machinery for production, assembly lines for product assembly, and dedicated warehouse space for storing raw materials and finished products.",
+    "price": "$10,000/month",
+    "status": "rent",
+    "area": "20,000 sqft",
+    "location_name": "Canary Wharf",
+    "location_coordinate": [51.5048, -0.0195]
+  },
+  {
+    "id": 3,
+    "estate_title": "Cold Storage Facility",
+    "image": "https://i.ibb.co/0mRfmwn/5ddcc3c5-b3ec-4d53-9d21-ae3f293c2e94.jpg",
+    "segment_name": "Industrial",
+    "description": "This state-of-the-art cold storage facility is ideal for storing perishable goods. It features temperature control systems to maintain the desired temperature for different types of products. With loading bays and freezer rooms, this facility ensures efficient handling and storage of perishable items. The facilities include temperature control systems for maintaining ideal storage conditions, loading bays for easy transportation of goods, and freezer rooms for storing perishable items.",
+    "price": "$2,500,000",
+    "status": "sale",
+    "area": "10,000 sqft",
+    "location_name": "Greenwich",
+    "location_coordinate": [51.4826, -0.0077]
+  },
+  {
+    "id": 4,
+    "estate_title": "Power Plant",
+    "image": "https://i.ibb.co/B4FxZjj/pixlr-image-generator-e8c8e9e2-7a10-42d2-8844-4cf53b7d84e9.png",
+    "segment_name": "Industrial",
+    "description": "This power generation plant is equipped with multiple turbines and backup systems to ensure uninterrupted power supply. With generators and a transformer yard, this plant can handle the energy needs of a large area. The facilities include generators for power generation, a transformer yard for power distribution, and a control room for monitoring and managing operations.",
+    "price": "$50,000,000",
+    "status": "sale",
+    "area": "100 acres",
+    "location_name": "Stratford",
+    "location_coordinate": [51.5433, -0.0027]
+  },
+  {
+    "id": 5,
+    "estate_title": "Industrial Park",
+    "image": "https://i.ibb.co/RySFVQD/pixlr-image-generator-384a0147-ad83-4fe1-9c4c-09b178875a20.png",
+    "segment_name": "Industrial",
+    "description": "This comprehensive industrial park offers diverse facilities for various industries. With warehousing, manufacturing units, and research labs, it provides everything businesses need for their operations. The facilities include warehousing for storage, manufacturing units for production, and research labs for innovation and development.",
+    "price": "$15,000,000",
+    "status": "rent",
+    "area": "200 acres",
+    "location_name": "Whitechapel",
+    "location_coordinate": [51.5194, -0.0598]
+  },
+  {
+    "id": 6,
+    "estate_title": "Production Plant",
+    "image": "https://i.ibb.co/k0ZvBbd/pixlr-image-generator-10c3a1d5-67f5-4048-8275-1de94714bb74.png",
+    "segment_name": "Industrial",
+    "description": "This specialized production plant is optimized for high-volume manufacturing. With assembly lines and quality control labs, it ensures efficient production processes and maintains product quality. The facilities include assembly lines for product manufacturing, quality control labs for ensuring product quality, and storage facilities for storing raw materials and finished products.",
+    "price": "$8,500,000",
+    "status": "sale",
+    "area": "30,000 sqft",
+    "location_name": "Wembley",
+    "location_coordinate": [51.556, -0.279]
+  },
+  {
+    "id": 7,
+    "estate_title": "Distribution Center",
+    "image": "https://i.ibb.co/Xb1vzXT/pixlr-image-generator-94a540b0-c87b-404f-8bf0-9cd2e72c5041.png",
+    "segment_name": "Industrial",
+    "description": "This efficient distribution center is strategically located for streamlined logistics. With loading docks, inventory management systems, and truck bays, it ensures smooth transportation and distribution of goods. The facilities include loading docks for easy loading and unloading of goods, inventory management systems for efficient tracking of inventory, and truck bays for loading goods onto trucks for distribution.",
+    "price": "$3,500,000",
+    "status": "rent",
+    "area": "60,000 sqft",
+    "location_name": "Croydon",
+    "location_coordinate": [51.3762, -0.0982]
+  }
+]

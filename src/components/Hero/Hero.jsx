@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
           <p className="text-xl p-3"> For any kind of query, go to the FAQs page.</p>
           <Link to="/faqs">
-            <a className="btn bg-orange-500 hover:bg-blue-500 border-0 text-white">Go to FAQs</a>
+            <button className="btn bg-orange-500 hover:bg-blue-500 border-0 text-white">Go to FAQs</button>
           </Link>
         </div>
       </div>
