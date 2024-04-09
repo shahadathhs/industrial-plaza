@@ -1,11 +1,30 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContest } from "../../Providers/AuthProviders";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContest);
+
+  const handleRegister = ( ) => {
+    // create user
+    createUser(email, password)
+      .then((userCredential) => {
+        // Signed up 
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
+  }
+
   return (
     <div className="bg-base-200 py-3 lg:py-6 my-5">
       <p className="text-center pb-3 text-2xl text-blue-500 font-bold">Register Here</p>
       <div className="rounded-xl mx-auto p-5 w-4/5 md:w-1/2 lg:w-1/3 bg-base-100">
-        <form>
+        <form onSubmit={handleRegister}>
           <div className="form-control">
             <label className="label">
               <span className="label-text text-lg text-orange-500 font-medium">Name</span>

@@ -1,11 +1,37 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContest } from "../../Providers/AuthProviders";
 
 const Login = () => {
+
+  const { login } = useContext(AuthContest);
+  const location = useLocation();
+  console.log(location);
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // sign in
+    login(email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log(user);
+
+        // navigate after login
+        navigate(location?.state ? location.state : '/')
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
+  }
+
   return (
       <div className="bg-base-200 py-3 lg:py-6 my-5 space-y-4">
         <p className="text-center text-2xl text-blue-500 font-bold">Login Here</p>
         <div className="rounded-xl mx-auto p-5 w-4/5 md:w-1/2 lg:w-1/3 bg-base-100">
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-lg text-orange-500 font-medium">Email</span>
