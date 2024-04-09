@@ -16,7 +16,7 @@ const FAQs = () => {
         </div>
         
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4" /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             What locations are your industrial properties situated in?
           </div>
@@ -26,7 +26,7 @@ const FAQs = () => {
         </div>
         
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"/> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             What amenities and facilities are included in your industrial properties?
           </div>
@@ -36,7 +36,7 @@ const FAQs = () => {
         </div>
 
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"  /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             Are there any industrial properties available for sale or lease in specific price ranges?
           </div>
@@ -46,7 +46,7 @@ const FAQs = () => {
         </div>
 
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"  /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             Do you provide virtual tours or detailed images of your industrial properties?
           </div>
@@ -56,7 +56,7 @@ const FAQs = () => {
         </div>
 
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"  /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             What are the zoning regulations and restrictions for your industrial properties?
           </div>
@@ -66,7 +66,7 @@ const FAQs = () => {
         </div>
 
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"  /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             Are there any upcoming developments or projects in the industrial areas you represent?
           </div>
@@ -76,7 +76,7 @@ const FAQs = () => {
         </div>
 
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"  /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             Can you provide insights into the market trends and demand for industrial properties in specific regions?
           </div>
@@ -86,7 +86,7 @@ const FAQs = () => {
         </div>
 
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"  /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             What financing options or assistance do you offer for industrial property acquisitions?
           </div>
@@ -96,7 +96,7 @@ const FAQs = () => {
         </div>
 
         <div className="collapse collapse-arrow join-item border border-blue-500">
-          <input type="radio" name="my-accordion-4" defaultChecked /> 
+          <input type="radio" name="my-accordion-4"  /> 
           <div className="collapse-title text-xl text-orange-500 font-medium">
             Do you offer property management services for industrial facilities?
           </div>

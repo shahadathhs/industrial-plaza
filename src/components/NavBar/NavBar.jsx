@@ -52,7 +52,7 @@ const Nav = () => {
             </div>
             {/* Login / LogOut Button */}
             <div className="navbar-end gap-2">
-                <a className="btn bg-orange-500 hover:bg-blue-500 border-0 text-white">Login</a>
+                <Link to="/login" className="btn bg-orange-500 hover:bg-blue-500 border-0 text-white">Login</Link>
             </div>
         </div>
     );

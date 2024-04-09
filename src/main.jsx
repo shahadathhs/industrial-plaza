@@ -11,6 +11,8 @@ import Home from './pages/Home/Home';
 import FAQs from './pages/FAQs/FAQs';
 import Testimonials from './pages/Testimonials/Testimonials';
 import EstateDetails from './components/EstateDetails/EstateDetails';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
         path: '/estate/:id',
         element: <EstateDetails></EstateDetails>,
         loader: () => fetch('/Estate.json'),
+      },
+      {
+        path: '/login',
+        element: <Login></Login>,
+      },
+      {
+        path: '/register',
+        element: <Register></Register>,
       }
     ]
   },
