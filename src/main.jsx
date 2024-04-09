@@ -30,6 +30,7 @@ const router = createBrowserRouter([
       {
         path: '/testimonials',
         element: <Testimonials></Testimonials>,
+        loader: () => fetch('/Review.json'),
       },
       {
         path: '/estate/:id',

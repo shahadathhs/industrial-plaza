@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "image": "https://i.ibb.co/8mTs9GT/pikaso-texttoimage-John-Smith.jpg",
+    "review": "I recently leased a warehouse through IndustrialPlaza, and I couldn't be happier with the experience. The team was incredibly helpful throughout the entire process, guiding me step by step and finding the perfect space for my business needs. Highly recommend their services!",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "image": "https://i.ibb.co/hLXjdwj/pikaso-texttoimage-Sarah-Johnson.jpg",
+    "review": "I had been searching for a suitable factory building for my manufacturing business for months with no luck until I came across IndustrialPlaza. They had an impressive range of listings, and their team helped me find the ideal property quickly. Thanks to them, my business is thriving!",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "David Thompson",
+    "image": "https://i.ibb.co/sgSSw0n/pikaso-texttoimage-David-Thompson-profile-picture.jpg",
+    "review": "IndustrialPlaza made the process of purchasing a power plant surprisingly smooth and stress-free. From finding the right property to negotiating the deal, their expertise was invaluable. I'm impressed with their professionalism and would gladly work with them again.",
+    "rating": 4.5
+  },
+  {
+    "id": 4,
+    "name": "Emily Martinez",
+    "image": "https://i.ibb.co/VLH4bdq/pikaso-texttoimage-Emily-Martinez.jpg",
+    "review": "I was impressed by the level of service provided by IndustrialPlaza when I was looking for a distribution center for my logistics company. They understood my requirements perfectly and found a property that exceeded my expectations. Highly recommended!",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Michael Harris",
+    "image": "https://i.ibb.co/nPynZFR/pikaso-texttoimage-Michael-Harrisz.jpg",
+    "review": "I can't thank IndustrialPlaza enough for helping me find the perfect cold storage facility for my food business. Their attention to detail and dedication to finding the right property for my specific needs were unmatched. I'm grateful for their expertise and support.",
+    "rating": 4.8
+  }
+]
