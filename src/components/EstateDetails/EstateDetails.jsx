@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FcRating } from "react-icons/fc";
-import Location from '../Location/Location';
+import Map from '../Map/Map';
+
 const EstateDetails = () => {
 
   const estates = useLoaderData();
@@ -8,6 +9,10 @@ const EstateDetails = () => {
   const idInt = parseInt(id);
   const estate = estates.find(estate => estate.id === idInt);
   // console.log(estate);
+
+  // const position = estate.location_coordinate;
+  // console.log(position)
+
   return (
     <div className="my-4 px-3 lg:px-12 py-3 lg:py-6 bg-base-200">
       <div className="flex flex-col justify-between items-center gap-5 lg:flex-row-reverse">
@@ -37,8 +42,11 @@ const EstateDetails = () => {
           <p className='font-bold text-lg text-gray-500'>Segment Name: {estate.segment_name}</p>
         </div>
       </div>
-      <div className='text-center pt-4'>
-        <Location></Location>
+      <div className='text-center pt-4 space-y-4'>
+        <hr className='border-t-2 border-orange-500' />
+        <p className='text-gray-500 font-bold'>Here is the  map of {estate.estate_title}</p>
+        <hr className='border-t-2 border-orange-500' />
+        <Map estate={estate}></Map>
       </div>
     </div>
   );
