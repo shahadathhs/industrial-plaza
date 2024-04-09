@@ -11,7 +11,7 @@ const ErrorPage = () => {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-      <Link to="/" className="btn btn-primary bg-green-500 border-0">Go back to home</Link>
+      <Link to="/" className="btn text-white bg-orange-500 hover:bg-blue-500 border-0">Go back to home</Link>
     </div>
   );
 };
