@@ -5,7 +5,6 @@ import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const estates = useLoaderData();
-  // console.log(estates);
 
   return (
     <div className="py-2 space-y-2">

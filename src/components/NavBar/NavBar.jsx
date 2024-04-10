@@ -10,8 +10,9 @@ const Nav = () => {
     const handleSignOut = () =>{
         logOut()
           .then(() => {
-            toast.success('Sign-out successful!')
-          }).catch(() => {
+            toast.success('Logout successful!')
+          })
+          .catch(() => {
             toast.error('An error happened!')
         });  
     }
@@ -67,12 +68,14 @@ const Nav = () => {
             {/* Login / LogOut Button */}
             <div className="navbar-end gap-2">
                 {
-                    user? 
+                    user
+                    ? 
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 {
-                                    user.photoURL ?
+                                    user.photoURL 
+                                    ?
                                     <img src={user?.photoURL} />
                                     :
                                     <div className="flex justify-center text-2xl my-auto py-2 text-orange-500"><RxAvatar/></div>
@@ -81,13 +84,30 @@ const Nav = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm space-y-2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li>
-                                <button className="btn btn-sm bg-orange-500 text-white  btn-ghost">{user?.displayName ||'Reload required'}</button>
+                                <button className="btn bg-orange-500 text-white  btn-ghost">
+                                    {
+                                        user.displayName
+                                        ?
+                                        <div>
+                                            <p>User Name:</p>
+                                            <p>{user.displayName}</p>
+                                        </div>
+                                        :
+                                        'User name not found'
+                                    }
+                                </button>
                             </li>
                             <li>
                                 <button onClick={handleSignOut}  className="btn btn-sm text-white bg-orange-500 btn-ghost">Logout</button>
                             </li>
+                            <li>
+                                <Link to="/userProfile" className="btn btn-sm text-white bg-orange-500 btn-ghost">User Profile</Link>
+                            </li>
+                            <li>
+                                <Link to="/updateProfile" className="btn btn-sm text-white bg-orange-500 btn-ghost">Update Profile</Link>
+                            </li>
                         </ul>
-                        </div>
+                    </div>
                     :
                     <Link to="/login" className="btn bg-orange-500 hover:bg-blue-500 border-0 text-white">Login</Link>
                 }

@@ -6,7 +6,6 @@ import { AuthContest } from '../Providers/AuthProviders';
 const PrivateRoot = ({children}) => {
   const {user, loading} = useContext(AuthContest);
   const location = useLocation();
-  console.log(location.pathname);
 
   if(loading){
     return <span className="loading loading-bars loading-lg"></span>

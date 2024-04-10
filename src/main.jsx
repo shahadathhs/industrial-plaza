@@ -15,6 +15,8 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import AuthProviders from './Providers/AuthProviders';
 import PrivateRoutes from './Routes/PrivateRoutes';
+import UserProfile from './pages/UserProfile/UserProfile';
+import UpdateProfile from './pages/UpdateProfile/UpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -48,7 +50,15 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>,
-      }
+      },
+      {
+        path: '/userProfile',
+        element: <PrivateRoutes><UserProfile></UserProfile></PrivateRoutes>,
+      },
+      {
+        path: '/updateProfile',
+        element: <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>,
+      },
     ]
   },
 ]);
