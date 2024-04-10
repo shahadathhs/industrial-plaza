@@ -1,56 +1,70 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContest } from "../../Providers/AuthProviders";
+import { useForm } from "react-hook-form";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
 
   const { login } = useContext(AuthContest);
-  const location = useLocation();
-  console.log(location);
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  
+  // navigation systems
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state  || "/";
 
-  const handleLogin = () => {
-    // sign in
-    login(email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        console.log(user);
+  // handle register
+  const onSubmit = data => {
+    const { email, password } = data;
 
-        // navigate after login
-        navigate(location?.state ? location.state : '/')
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
-      });
-  }
+      login(email, password)
+        .then((result) => {
+          console.log(result.user);
+          toast.success('Login successful!');
+          if (result.user) {
+            navigate(from);
+          }
+        })
+        .catch(()=> {
+          toast.error('Password or Email did not match!')
+        })
+  };
 
   return (
       <div className="bg-base-200 py-3 lg:py-6 my-5 space-y-4">
         <p className="text-center text-2xl text-blue-500 font-bold">Login Here</p>
         <div className="rounded-xl mx-auto p-5 w-4/5 md:w-1/2 lg:w-1/3 bg-base-100">
-          <form onSubmit={handleLogin}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-lg text-orange-500 font-medium">Email</span>
               </label>
-              <input type="email" name="email" placeholder="Your Email" className="input input-bordered" required />
+              <input type="email" name="email" placeholder="Your Email" 
+              className="input input-bordered"  
+              {...register("email", { required: true })}
+              />
+              {errors.email && <span className='text-red-500'>This field is required</span>}
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-lg text-orange-500 font-medium">Password</span>
               </label>
-              <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
+              <input 
+              type="password" name="password" placeholder="Password" 
+              className="input input-bordered"  
+              {...register("password", { required: true })}
+              />
+              {errors.password && <span className='text-red-500'>This field is required</span>}                 
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0">Login</button>
             </div>
             <div className="pt-2">
-              <p>New? Register <Link to="/register" className="text-violet-600 font-medium">here</Link> </p>
+              <p>No account? Register <Link to="/register" className="text-violet-600 font-medium">here</Link> </p>
             </div>
           </form>
+          <Toaster />
         </div>
         <hr className="border-t-2 border-blue-700 border-dashed" />
         <div className="text-center space-y-3">

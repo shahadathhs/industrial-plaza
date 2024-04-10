@@ -14,6 +14,7 @@ import EstateDetails from './components/EstateDetails/EstateDetails';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import AuthProviders from './Providers/AuthProviders';
+import PrivateRoutes from './Routes/PrivateRoutes';
 
 const router = createBrowserRouter([
   {
@@ -32,12 +33,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/testimonials',
-        element: <Testimonials></Testimonials>,
+        element: <PrivateRoutes><Testimonials></Testimonials></PrivateRoutes>,
         loader: () => fetch('/Review.json'),
       },
       {
         path: '/estate/:id',
-        element: <EstateDetails></EstateDetails>,
+        element: <PrivateRoutes><EstateDetails></EstateDetails></PrivateRoutes>,
         loader: () => fetch('/Estate.json'),
       },
       {
