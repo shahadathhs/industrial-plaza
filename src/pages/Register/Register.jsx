@@ -10,11 +10,7 @@ const Register = () => {
   const [passwordError,setPasswordError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, formState: { errors }, } = useForm();
 
   // navigation systems
   const navigate = useNavigate();
@@ -122,25 +118,6 @@ const Register = () => {
                 passwordError && <small className='text-red-800'>{passwordError}</small>
               }
             </div>
-            {/* <input 
-            type={showPassword ? "text" : "password"} name="password" placeholder="Password" 
-            className="input input-bordered"
-            {...register("password", { required: true })} 
-            />
-            <span 
-              className="absolute  center-5" 
-              onClick={() => setShowPassword(!showPassword)}
-            >
-                {
-                  showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
-                }
-            </span>
-            {errors.password && (
-              <span className="text-red-500">This field is required</span>
-            )}
-            {
-              passwordError && <small className='text-red-800'>{passwordError}</small>
-            } */}
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0">Register</button>
