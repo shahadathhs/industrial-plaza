@@ -8,7 +8,9 @@ const PrivateRoot = ({children}) => {
   const location = useLocation();
 
   if(loading){
-    return <span className="loading loading-bars loading-lg"></span>
+    return <div className='w-full h-[300px] flex justify-center items-center text-3xl'>
+      <span className="loading loading-bars loading-lg h-[150px]"></span>
+    </div>
   }
 
   if (user) {

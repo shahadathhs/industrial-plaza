@@ -4,9 +4,9 @@ import { AuthContest } from "../../Providers/AuthProviders";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
 import { FaEye, FaEyeSlash, FaGoogle, FaGithub  } from 'react-icons/fa';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Login = () => {
-
   const { login, googleLogin, githubLogin } = useContext(AuthContest);
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [showPassword, setShowPassword] = useState(false);
@@ -47,7 +47,12 @@ const Login = () => {
   };
 
   return (
-      <div className="bg-base-200 py-3 lg:py-6 my-5 space-y-4">
+    <HelmetProvider>
+      <div>
+        <Helmet>
+          <title>IP | Login</title>
+        </Helmet>
+        <div className="bg-base-200 py-3 lg:py-6 my-5 space-y-4">
         <p className="text-center text-2xl text-blue-500 font-bold">Login Here</p>
         <div className="rounded-xl mx-auto p-5 w-[300px] md:w-[450px] bg-base-100">
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -112,6 +117,8 @@ const Login = () => {
           </button>
         </div>
       </div>
+      </div>
+    </HelmetProvider>
   );
 };
 
