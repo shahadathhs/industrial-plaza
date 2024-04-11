@@ -4,6 +4,12 @@
 
 ### On this website
 
+#### We used three NPM Package for the challenges task. They are-
+
+  1. React-leaflet
+  2. React Hook Form
+  3. Swiper Slider
+
 #### We have Four page for service
   
   1. Home Page
