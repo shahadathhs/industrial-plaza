@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import { FcRating } from "react-icons/fc";
 
 const Review = ({review}) => {
-  // console.log(review);
-
   return (
     <div>
       <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">

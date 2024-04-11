@@ -3,9 +3,6 @@ import { FcRating } from "react-icons/fc";
 import { Link } from 'react-router-dom';
 
 const Estates = ({estate}) => {
-  // console.log(estate);
-  // console.log(typeof(estate))
-
   return (
     <div className='mx-auto pt-2'>
       <div className="max-w-xs p-6 rounded-md shadow-md bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">

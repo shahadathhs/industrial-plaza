@@ -22,7 +22,6 @@ const createClusterCustomIcon = function (cluster) {
 
 const Map = ({estate}) => {
   const { location_coordinate, estate_title} = estate;
-  // console.log(location_coordinate, estate_title);
 
   return (
     <MapContainer 

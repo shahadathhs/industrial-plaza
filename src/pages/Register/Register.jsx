@@ -41,10 +41,9 @@ const Register = () => {
       
     //create user and update profile
     createUser(email, password)
-      .then((result) => {
+      .then(() => {
         logOut();
         toast.success('Register successful!');
-        console.log(result.user);
         updateUserProfile(name, image)
           .then(() => {
             navigate(from);
@@ -124,7 +123,7 @@ const Register = () => {
                     <span className="text-red-500">This field is required</span>
                   )}
                   {
-                    passwordError && <small className='text-red-800'>{passwordError}</small>
+                    passwordError && <small className='text-red-500'>{passwordError}</small>
                   }
                 </div>
               </div>

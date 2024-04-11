@@ -114,8 +114,7 @@ const FAQs = () => {
           </div>
         </div>
       </div>
-    </HelmetProvider>
-    
+    </HelmetProvider> 
   );
 };
 

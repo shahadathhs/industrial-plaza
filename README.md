@@ -1,6 +1,9 @@
 # Website Name: "IndustrialPlaza"
 
-## Live Site URL: https://ningth-a-industrial-plaza.web.app/
+## Live Site URL
+  
+  1. <https://ningth-a-industrial-plaza.web.app/>
+  2. <https://ningth-a-industrial-plaza.firebaseapp.com/>
 
 ### On this website
 
