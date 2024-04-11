@@ -2,7 +2,7 @@
 
 ## Live Site URL: add later
 
-On this website,
+### On this website
 
   1. We have four page for service- a. Home Page b. FAQs Page c. Testimonials Page. d. Estate Details Page.
 
@@ -10,7 +10,7 @@ On this website,
 
   3. In total, we have eight page and four of them belong to private route. They are- a.Testimonials Page. b. Estate Details Page. c. User Profile Page d. Update Profile Page.
 
-Features and Characteristics:
+### Features and Characteristics
 
   1. Interactive Maps: Utilize interactive maps [In Estate Details Page] to explore property locations and access essential information such as nearby amenities, transportation routes, and more, empowering you to make informed decisions.
 
