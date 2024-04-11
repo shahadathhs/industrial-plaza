@@ -12,7 +12,9 @@
 
 ### Features and Characteristics
 
-  1. Interactive Maps: Utilize interactive maps [In Estate Details Page] to explore property locations and access essential information such as nearby amenities, transportation routes, and more, empowering you to make informed decisions.
+#### Interactive Maps
+  
+  "Utilize interactive maps [In Estate Details Page] to explore property locations and access essential information such as nearby amenities, transportation routes, and more, empowering you to make informed decisions."
 
   2. Customer Reviews and Testimonials: Gain insights into the experiences of previous clients through customer reviews and testimonials, helping you build trust and confidence in our services.
 
