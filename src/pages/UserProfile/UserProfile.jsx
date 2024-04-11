@@ -3,6 +3,7 @@ import { AuthContest } from "../../Providers/AuthProviders";
 import { Link } from "react-router-dom";
 import { FaPhotoFilm } from "react-icons/fa6";
 import { MdDoNotDisturbAlt } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa";
 
 const UserProfile = () => {
 
@@ -34,10 +35,10 @@ const UserProfile = () => {
               <span className="text-orange-500">Name:</span> {user?.displayName}
             </p>
             <p className="text-3xl font-semibold leading-none">
-            <span className="text-orange-500">Email:</span> {user?.email}
+            <span className="text-orange-500">Email:</span> {user?.email || "Email is not available "}
             </p>
             <Link to="/updateProfile" className="btn border-0 hover:bg-orange-500 text-lg font-medium bg-blue-600 text-white w-[300px]">
-              Update Profile
+              Go to  Update Profile <FaArrowRight />
             </Link>
           </div>
         </div>

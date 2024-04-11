@@ -21,6 +21,7 @@ const Register = () => {
   const location = useLocation();
   const from = location?.state || "/";
 
+  // handle register
   const onSubmit = (data) => {
     const { email, password, image, name } = data;
 
@@ -43,9 +44,10 @@ const Register = () => {
       
     //create user and update profile
     createUser(email, password)
-      .then(() => {
+      .then((result) => {
         logOut();
         toast.success('Register successful!');
+        console.log(result.user);
         updateUserProfile(name, image)
           .then(() => {
             navigate(from);

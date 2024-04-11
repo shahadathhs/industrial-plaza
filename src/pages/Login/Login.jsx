@@ -7,7 +7,7 @@ import { FaEye, FaEyeSlash, FaGoogle, FaGithub  } from 'react-icons/fa';
 
 const Login = () => {
 
-  const { login } = useContext(AuthContest);
+  const { login, googleLogin, githubLogin } = useContext(AuthContest);
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [showPassword, setShowPassword] = useState(false);
   
@@ -16,13 +16,12 @@ const Login = () => {
   const location = useLocation();
   const from = location?.state  || "/";
 
-  // handle register
+  // handle email login
   const onSubmit = data => {
     const { email, password } = data;
 
       login(email, password)
         .then((result) => {
-          console.log(result.user);
           toast.success('Login successful!');
           if (result.user) {
             navigate(from);
@@ -31,6 +30,20 @@ const Login = () => {
         .catch(()=> {
           toast.error('Password or Email did not match!')
         })
+  };
+
+  // handle direct login
+  const handleDirectLogin = (socialProvider) => {
+    socialProvider()
+      .then((result) => {
+        console.log(result.user);
+        if (result.user) {
+          navigate(from);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   };
 
   return (
@@ -83,12 +96,18 @@ const Login = () => {
         <div className="text-center space-y-3">
           <p className="text-center text-2xl text-blue-500 font-bold">Or continue with</p>
           {/* Google Login */}
-          <button className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0">
+          <button 
+            className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0"
+            onClick={() => handleDirectLogin(googleLogin)}
+          >
             <FaGoogle />Login with Google
           </button>
           <br />
           {/* GitHub Login */}
-          <button className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0">
+          <button 
+            className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0"
+            onClick={() => handleDirectLogin(githubLogin)}
+          >
             <FaGithub />Login with GitHub
           </button>
         </div>

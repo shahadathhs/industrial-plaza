@@ -84,7 +84,7 @@ const Nav = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm space-y-2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li>
-                                <button className="btn bg-orange-500 text-white  btn-ghost">
+                                <button className="btn bg-orange-500 text-white hover:bg-blue-500  btn-ghost">
                                     {
                                         user.displayName
                                         ?
@@ -98,13 +98,13 @@ const Nav = () => {
                                 </button>
                             </li>
                             <li>
-                                <button onClick={handleSignOut}  className="btn btn-sm text-white bg-orange-500 btn-ghost">Logout</button>
+                                <button onClick={handleSignOut}  className="btn btn-sm text-white bg-orange-500 hover:bg-blue-500 btn-ghost">Logout</button>
                             </li>
                             <li>
-                                <Link to="/userProfile" className="btn btn-sm text-white bg-orange-500 btn-ghost">User Profile</Link>
+                                <Link to="/userProfile" className="btn btn-sm text-white bg-orange-500 hover:bg-blue-500 btn-ghost">User Profile</Link>
                             </li>
                             <li>
-                                <Link to="/updateProfile" className="btn btn-sm text-white bg-orange-500 btn-ghost">Update Profile</Link>
+                                <Link to="/updateProfile" className="btn btn-sm text-white bg-orange-500 hover:bg-blue-500 btn-ghost">Update Profile</Link>
                             </li>
                         </ul>
                     </div>
