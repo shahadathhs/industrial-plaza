@@ -13,6 +13,13 @@
   2. React Hook Form
   3. Swiper Slider
 
+#### We used some other NPM Package too. They are-
+
+  1. prop-types
+  2. React Hot Toast
+  3. React Icons
+  4. React Helmet Async
+
 #### We have Four page for service
   
   1. Home Page
