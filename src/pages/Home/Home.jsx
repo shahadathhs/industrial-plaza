@@ -13,16 +13,18 @@ const Home = () => {
         <Helmet>
           <title>IndustrialPlaza</title>
         </Helmet>
-        <div className="py-2 space-y-2">
+        <div className="space-y-2">
           <div className="sm:py-2 md:py-3 lg:py-6">
             <Hero></Hero>
           </div>
+          
           <div className="sm:px-1 md:px-3 lg:px-12 sm:py-2 md:py-3 lg:py-6">
             <Slide></Slide>
           </div>
-          <div className="text-center space-y-3 py-3 px-3 lg:px-12 bg-base-200">
-            <p className="text-3xl text-orange-500 font-bold">Explore our Estates</p>
-            <p className="text-gray-600">Here you can embark on a journey through a diverse range of industrial properties 
+          
+          <div className="px-3 py-3 space-y-3 text-center lg:px-12">
+            <p className="text-3xl font-bold text-orange-500 uppercase">Explore our Estates</p>
+            <p>Here you can embark on a journey through a diverse range of industrial properties 
               tailored to suit your business requirements. From spacious warehouses to 
               cutting-edge production plants, our curated selection offers a glimpse 
               into the vast opportunities awaiting you in the industrial real estate landscape. 
@@ -30,9 +32,9 @@ const Home = () => {
               your operations. Start your exploration today and unlock the potential of your 
               business with IndustrialPlaza.</p>
           </div>
+          
           <div 
-          className="sm:px-1 md:px-3 lg:px-12 sm:py-2 md:py-3 lg:py-6
-          grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-1 gap-5 sm:px-1 md:px-3 lg:px-12 sm:py-2 md:py-3 lg:py-6 md:grid-cols-2 lg:grid-cols-3"
           >
             {
               estates.map(estate => <Estates key={estate.id} estate={estate}></Estates>)

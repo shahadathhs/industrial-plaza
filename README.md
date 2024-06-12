@@ -10,37 +10,12 @@
 ## Tools and Technologies Used
 
 - **Tailwind CSS**
+- **Daisy UI & Mamba UI**
 - **React.js**
 - **React-leaflet**
 - **React Hook Form**
 - **Swiper Slider**
 - **Firebase**
-
-## Features and Characteristics
-
-### Interactive Maps
-  
-Utilize interactive maps [In Estate Details Page] to explore property locations and access essential information such as nearby amenities, transportation routes, and more, empowering you to make informed decisions.
-
-### Customer Reviews and Testimonials
-  
-Gain insights into the experiences of previous clients through customer reviews and testimonials, helping you build trust and confidence in our services.
-
-### User-Friendly Interface
-  
-Navigate seamlessly through our website with an intuitive and easy-to-use interface, designed to provide a smooth browsing experience for users of all levels.
-
-### Responsive Design
-  
-Enjoy a seamless browsing experience across devices with our responsive design, ensuring that you can access our website anytime, anywhere, from any device.
-
-### Estate Details Page
-  
-The "View Property" button in the "Explore Estate" section will take you to the Estate Details Page, where you will get all the details necessary for making a deal.
-
-### Overall
-
-You will get smooth and quality performance from our website.
 
 ## How to Run This Project Locally
 
@@ -87,3 +62,15 @@ You will get smooth and quality performance from our website.
    ```
 
 You should now see the IndustrialPlaza website running locally on your machine. Enjoy seamless browsing and exploring properties!
+
+## Features and Characteristics
+
+- Interactive Maps: Explore property locations with interactive maps.
+
+- Customer Reviews: Gain insights from previous clients' experiences.
+
+- User-Friendly Interface: Seamless navigation for all users.
+
+- Responsive Design: Access the website anytime, anywhere, on any device.
+
+- Estate Details: Detailed property information for informed decisions.

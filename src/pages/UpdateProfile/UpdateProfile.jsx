@@ -36,7 +36,7 @@ const UpdateProfile = () => {
         <Helmet>
           <title>IP | Profile Update</title>
         </Helmet>
-        <div className="bg-gray-100 px-2 md:px-3 lg:px-12 py-2 md:py-3 lg:py-6 my-4 space-y-3">
+        <div className=" px-2 md:px-3 lg:px-12 py-2 md:py-3 lg:py-6 my-4 space-y-3">
           <p className="text-center text-2xl text-blue-500 font-bold">Update your profile Here</p>
           <div className="rounded-xl mx-auto p-5 w-[300px] md:w-[450px] bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)}>

@@ -18,6 +18,7 @@ import PrivateRoutes from './Routes/PrivateRoutes';
 import UserProfile from './pages/UserProfile/UserProfile';
 import UpdateProfile from './pages/UpdateProfile/UpdateProfile';
 import EstateDetails from './pages/EstateDetails/EstateDetails';
+import ThemeProvider from './Providers/ThemeProvider';
 
 const router = createBrowserRouter([
   {
@@ -67,7 +68,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProviders>
-      <RouterProvider router={router} />
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </AuthProviders>
   </React.StrictMode>,
 )

@@ -15,23 +15,23 @@ const UserProfile = () => {
         <Helmet>
           <title>IP | User Profile</title>
         </Helmet>
-        <div className="bg-gray-100 px-2 md:px-3 lg:px-12 py-2 md:py-3 lg:py-6 my-4">
-          <section className="bg-gray-100 text-gray-800">
-            <div className="container flex flex-col justify-center items-center mx-auto md:flex-row gap-8">
+        <div className="py-2 pt-20 md:py-3 lg:py-6">
+          <section className="text-gray-800">
+            <div className="container flex flex-col items-center justify-center gap-8 mx-auto md:flex-row">
               {
                 user?.photoURL
                 ?
                 <img src={user?.photoURL} className="w-[350px] rounded-xl" />
                 :
-                <div className="bg-white p-6 rounded-2xl text-xl font-bold text-center text-red-500">
+                <div className="p-6 text-xl font-bold text-center text-red-500 bg-white rounded-2xl">
                   <p>Profile Photo Not Found</p>
-                  <div className="flex gap-2 justify-center">
+                  <div className="flex justify-center gap-2">
                     <FaPhotoFilm />
                     <MdDoNotDisturbAlt />
                   </div> 
                 </div>
               }
-              <div className="flex text-blue-500 flex-col w-full lg:w-2/3 gap-5">
+              <div className="flex flex-col w-full gap-5 text-blue-500 lg:w-2/3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-8 h-8 text-blue-600">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>

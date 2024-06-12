@@ -57,9 +57,9 @@ const Login = () => {
         <Helmet>
           <title>IP | Login</title>
         </Helmet>
-        <div className="bg-base-200 py-3 lg:py-6 my-5 space-y-4">
-          <p className="text-center text-2xl text-blue-500 font-bold">Login Here</p>
-          <div className="rounded-xl mx-auto p-5 w-[300px] md:w-[450px] bg-base-100">
+        <div className="py-3 lg:py-6 my-5 space-y-4">
+          <p className="text-center text-3xl text-blue-500 font-bold">Login to your account</p>
+          <div className="rounded-xl mx-auto p-3 w-[300px] md:w-[450px] bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-control">
                 <label className="label">
@@ -118,7 +118,7 @@ const Login = () => {
             <br />
             {/* GitHub Login */}
             <button 
-              className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0"
+              className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0 hidden"
               onClick={() => handleDirectLogin(githubLogin)}
             >
               <FaGithub />Login with GitHub

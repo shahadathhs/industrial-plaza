@@ -58,7 +58,7 @@ const Register = () => {
         <Helmet>
           <title>IP | Register</title>
         </Helmet>
-        <div className="bg-base-200 py-3 lg:py-6 my-5">
+        <div className="py-3 lg:py-6 my-5">
           <p className="text-center pb-3 text-2xl text-blue-500 font-bold">Register Here</p>
           <div className="rounded-xl mx-auto p-5 w-[300px] md:w-[450px] bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -75,6 +75,7 @@ const Register = () => {
                   <span className="text-red-500">This field is required</span>
                 )}
               </div>
+              
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-lg text-orange-500 font-medium">Email</span>
@@ -88,6 +89,7 @@ const Register = () => {
                   <span className="text-red-500">This field is required</span>
                 )}
               </div>
+              
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-lg text-orange-500 font-medium">Photo URL</span>
@@ -101,6 +103,7 @@ const Register = () => {
                   <span className="text-red-500">This field is required</span>
                 )}
               </div>
+              
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-lg text-orange-500 font-medium">Password</span>
@@ -127,9 +130,11 @@ const Register = () => {
                   }
                 </div>
               </div>
+              
               <div className="form-control mt-6">
                 <button className="btn btn-outline border-2 text-orange-500 hover:bg-blue-500 hover:border-0">Register</button>
               </div>
+              
               <div className="pt-2">
                 <p>Already have an account? Login <Link to="/login" className="text-violet-600 font-medium">here</Link> </p>
               </div>

@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="sm:px-1 md:px-3 lg:px-12 sm:py-2 md:py-3 lg:py-6 divide-y bg-gray-100 text-gray-800">
-      <div className="container flex flex-col justify-center text-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-        <div className="lg:w-1/4 sm:text-center  lg:text-left">
-          <Link to='/' className="normal-case sm:text-2xl  lg:text-3xl font-bold p-0">
+    <footer className="divide-y sm:px-1 md:px-3 lg:px-12 sm:py-2 md:py-3 lg:py-6">
+      <div className="container flex flex-col justify-center py-10 mx-auto space-y-8 text-center lg:flex-row lg:space-y-0">
+        <div className="lg:w-1/4 sm:text-center lg:text-left">
+          <Link to='/' className="p-0 font-bold normal-case sm:text-2xl lg:text-3xl">
             <span className="text-blue-500">Industrial</span><span className="text-orange-500">Plaza</span> 
           </Link>
         </div>
-        <div className="grid grid-cols-2 justify-between text-sm gap-x-3 gap-y-8 lg:w-2/3">
+        <div className="grid justify-between grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3">
           <div className="space-y-3">
-            <h3 className="tracking-wide uppercase text-gray-900">Product</h3>
+            <h3 className="text-2xl tracking-wide text-blue-600 uppercase ">Product</h3>
             <ul className="space-y-1">
               <li>
                 <a rel="noopener noreferrer" href="#">Features</a>
@@ -28,7 +28,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="tracking-wide uppercase text-gray-900">Company</h3>
+            <h3 className="text-2xl tracking-wide text-blue-600 uppercase">Company</h3>
             <ul className="space-y-1">
               <li>
                 <a rel="noopener noreferrer" href="#">Privacy</a>
@@ -39,8 +39,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="space-y-3 text-center p-4">
-            <div className="uppercase text-gray-900">Social media</div>
+        <div className="p-4 space-y-3 text-center">
+            <div className="text-2xl text-blue-600 uppercase">Social media</div>
             <div className="flex justify-center space-x-3">
               <a rel="noopener noreferrer" href="#" title="Facebook" className="flex items-center p-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
