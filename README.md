@@ -1,63 +1,89 @@
-# Website Name: "IndustrialPlaza"
+# IndustrialPlaza
 
-## Live Site URL
+## Live Site URLs
+
+- <https://ningth-a-industrial-plaza.web.app>
+- <https://ningth-a-industrial-plaza.firebaseapp.com>
+
+## This is a simple real state website with firebase authentication
+
+## Tools and Technologies Used
+
+- **Tailwind CSS**
+- **React.js**
+- **React-leaflet**
+- **React Hook Form**
+- **Swiper Slider**
+- **Firebase**
+
+## Features and Characteristics
+
+### Interactive Maps
   
-  1. <https://ningth-a-industrial-plaza.web.app/>
-  2. <https://ningth-a-industrial-plaza.firebaseapp.com/>
+Utilize interactive maps [In Estate Details Page] to explore property locations and access essential information such as nearby amenities, transportation routes, and more, empowering you to make informed decisions.
 
-### On this website
-
-#### We used few NPM Package and they are-
-
-  1. React-leaflet
-  2. React Hook Form
-  3. Swiper Slider
-  4. prop-types
-  5. React Hot Toast
-  6. React Icons
-  7. React Helmet Async
-
-#### We have Four page for service
+### Customer Reviews and Testimonials
   
-  1. Home Page
-  2. FAQs Page
-  3. Testimonials Page
-  4. Estate Details Page
+Gain insights into the experiences of previous clients through customer reviews and testimonials, helping you build trust and confidence in our services.
 
-#### We have Four page for authentication
-
-  1. Login Page
-  2. Register Page
-  3. User Profile Page
-  4. Update Profile Page
-
-### In total, we have eight page and four of them belong to private route. They are-
-
-  1. Testimonials Page
-  2. Estate Details Page
-  3. User Profile Page
-  4. Update Profile Page
-
-### Features and Characteristics
-
-#### Interactive Maps
+### User-Friendly Interface
   
-  "Utilize interactive maps [In Estate Details Page] to explore property locations and access essential information such as nearby amenities, transportation routes, and more, empowering you to make informed decisions."
+Navigate seamlessly through our website with an intuitive and easy-to-use interface, designed to provide a smooth browsing experience for users of all levels.
 
-#### Customer Reviews and Testimonials
+### Responsive Design
   
-  "Gain insights into the experiences of previous clients through customer reviews and testimonials, helping you build trust and confidence in our services."
+Enjoy a seamless browsing experience across devices with our responsive design, ensuring that you can access our website anytime, anywhere, from any device.
 
-#### User-Friendly Interface
+### Estate Details Page
   
-  "Navigate seamlessly through our website with an intuitive and easy-to-use interface, designed to provide a smooth browsing experience for users of all levels."
+The "View Property" button in the "Explore Estate" section will take you to the Estate Details Page, where you will get all the details necessary for making a deal.
 
-#### Responsive Design
-  
-  "Enjoy a seamless browsing experience across devices with our responsive design, ensuring that you can access our website anytime, anywhere, from any device."
+### Overall
 
-#### Estate Details Page
-  
-  "View Property" Button from "Explore Estate" section will take you to Estate Details Page, where you will get all details necessary for making a deal."
+You will get smooth and quality performance from our website.
 
-### Overall, you will get smooth and quality performance from our website
+## How to Run This Project Locally
+
+### Prerequisites in machine
+
+- Node.js (>=14.x.x)
+- npm (>=6.x.x)
+
+### Steps
+
+- **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/shahadathhs/industrial-plaza.git
+   ```
+
+- **Navigate to the project directory:**
+
+   ```sh
+   cd industrial-plaza
+   ```
+
+- **Install the dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+- **Create a `.env.local` file in the root of the project and add the required environment variables from firebase(web)**
+
+   ```sh
+   VITE_APIKEY=your-api-key
+   VITE_AUTHDOMAIN=your-auth-domain
+   VITE_PID=your-project-id
+   VITE_STORAGE=your-storage-bucket
+   VITE_MESSAGE=your-messaging-sender-id
+   VITE_APPTD=your-app-id
+   ```
+
+- **Run the development server:**
+
+   ```sh
+   npm run dev
+   ```
+
+You should now see the IndustrialPlaza website running locally on your machine. Enjoy seamless browsing and exploring properties!
