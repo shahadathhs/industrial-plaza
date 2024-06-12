@@ -28,7 +28,7 @@ const Map = ({estate}) => {
       className="h-[300px] md:h-[400px] w-3/4 md:w-2/3 mx-auto rounded-3xl" 
       center={location_coordinate} zoom={13} scrollWheelZoom={false}
     >
-      {/* OPEN STREEN MAPS TILES */}
+      {/* OPEN STREET MAPS TILES */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

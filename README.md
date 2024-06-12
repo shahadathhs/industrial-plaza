@@ -7,18 +7,15 @@
 
 ### On this website
 
-#### We used three NPM Package for the challenges task. They are-
+#### We used few NPM Package and they are-
 
   1. React-leaflet
   2. React Hook Form
   3. Swiper Slider
-
-#### We used some other NPM Package too. They are-
-
-  1. prop-types
-  2. React Hot Toast
-  3. React Icons
-  4. React Helmet Async
+  4. prop-types
+  5. React Hot Toast
+  6. React Icons
+  7. React Helmet Async
 
 #### We have Four page for service
   
