@@ -14,9 +14,9 @@ const ThemeToggle = () => {
         {
           theme === 'light' 
           ?
-          <GoSun className="m-2 text-3xl" />
+          <GoSun className="m-2 text-3xl text-orange-500" />
           :
-          <GiMoon className="m-2 text-3xl"  />
+          <GiMoon className="m-2 text-3xl text-orange-500"  />
         }
       </label>
     </div>
